@@ -1,0 +1,83 @@
+/* General layout */
+.expense-details-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .expense-details {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  .expense-detail-item {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .expense-detail-item strong {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .expense-detail-item span {
+    color: #777;
+  }
+  
+  /* Back Button Styles */
+  .back-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 20px auto;
+    transition:
+      background-color 0.3s ease,
+      transform 0.3s ease;
+  }
+  
+  .back-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px); /* Hover effect */
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .expense-details-container {
+      width: 95%;
+      padding: 15px;
+    }
+  
+    .expense-detail-item {
+      padding: 12px;
+      font-size: 14px;
+    }
+  
+    .back-btn {
+      padding: 12px 20px;
+      font-size: 14px;
+    }
+  }
+  
